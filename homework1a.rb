@@ -61,3 +61,4 @@ puts result
 end while continue == "N"
 # 若使用者回答 "N"，印出離開的訊息，不是就回到迴圈的上層繼續玩
 puts "Good Bye! Thanks for playing!"
+end
