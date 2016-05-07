@@ -41,10 +41,9 @@ loop do
       puts "Scissors beats Paper, You Lose!"
     elsif (user_input == "S") && (computer_input == "R")
       puts "Rock beats Scissors, You Lose!"
-    elsif (user_input == "S") && (computer_input == "P")
+    else (user_input == "S") && (computer_input == "P")
     puts "Scissors beats Paper, You Win!"
-    else
-      puts "Call Maintenance!"
+    
     end   
   end
 
