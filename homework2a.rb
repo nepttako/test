@@ -15,12 +15,14 @@ def get_user_input
 	user_input = gets.chomp.upcase
 	end until option.include? (user_input)
 	puts "You choose #{user_input}"
+	return user_input
 end
 
 def get_computer_input
 	option = ["R","P","S"]
 	computer_input = option.sample
 	puts "Computer choose #{computer_input}"
+	return computer_input
 end
 
 def rules(user_input,computer_input)
@@ -46,6 +48,7 @@ def continue
 		puts "Want to play again? Y / N "
 		replay = gets.chomp.upcase
 	end until ["Y","N"].include? (replay)
+	return replay
 end
 
 def goodbye
